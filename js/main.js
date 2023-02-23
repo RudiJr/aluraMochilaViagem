@@ -24,6 +24,9 @@ form.addEventListener("submit", (evento) => {
     if(existe){
         itemAtual.id = existe.id;
         atualizaElemento(itemAtual);
+
+        /* Updating the array `itens` with the new value of the item. */
+        itens[existe.id] = itemAtual;
     }else{
         itemAtual.id = itens.length;
 
